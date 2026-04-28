@@ -1,0 +1,183 @@
+/* Basic Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This is crucial for layout consistency */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif; /* Fancy header font */
+    text-align: center;
+}
+
+/* Padding class to ensure sections don't touch screen edges */
+.section-padding {
+    padding: 80px 5%; /* Top and bottom padding */
+}
+
+/* --- NAVIGATION BAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a0522d; /* Example accent color */
+}
+
+
+/* --- HERO SECTION (The main visual punch) --- */
+.hero {
+    height: 80vh; /* Takes up most of the screen height */
+    background: url('images/hero_main.jpg') no-repeat center center/cover; /* Main property photo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* White text over a potentially dark image */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+/* --- BUTTON STYLING --- */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #a0522d; /* Accent color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none; /* If used on a button */
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #8b4513; 
+}
+
+
+/* --- GALLERY SECTION --- */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures images fill their containers nicely */
+}
+
+
+/* --- FEATURES SECTION (The detail points) --- */
+.dark-background {
+    background-color: #f4f4f9; /* Light gray background */
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.feature-card {
+    flex: 1; /* Each card takes equal width */
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* --- CONTACT FORM SECTION --- */
+#contact {
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 30px auto;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* ================================= */
+/* MEDIA QUERIES (Responsiveness for Mobile) */
+/* ================================= */
+
+@media (max-width: 768px) {
+    /* On smaller screens, change the layout to stack */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature-grid {
+        flex-direction: column; /* Cards stack vertically */
+        align-items: center;
+    }
+    
+    .hero {
+        height: 60vh; /* Smaller header on mobile */
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}

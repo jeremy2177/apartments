@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Apartment Listing - [Address]</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Optional: Link a cool font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="logo">[Apartment Name]</div>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION (The first thing visitors see) -->
+    <section class="hero">
+        <h1>Your Dream Home Awaits.</h1>
+        <h2>Stunning views, prime location, modern luxury.</h2>
+        <a href="#contact" class="cta-button">Schedule a Viewing</a>
+    </section>
+
+    <!-- GALLERY/MEDIA SECTION -->
+    <section id="gallery" class="section-padding">
+        <h2>Gallery Highlights</h2>
+        <div class="image-gallery">
+            <!-- IMPORTANT: Replace these paths with your actual image files -->
+            <img src="images/living_room.jpg" alt="Bright Living Room">
+            <img src="images/kitchen.jpg" alt="Modern Kitchen">
+            <img src="images/bedroom.jpg" alt="Cozy Master Bedroom">
+            <!-- You can add more images here -->
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION (Selling points) -->
+    <section id="features" class="dark-background section-padding">
+        <h2>Property Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🛌 2 Bedrooms</h3>
+                <p>Spacious rooms perfect for family or work-from-home.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛁 1.5 Bathrooms</h3>
+                <p>Equipped with modern fixtures and walk-in shower.</p>
+            </div>
+            <div class="feature-card">
+                <h3>☀️ Sunlit Balcony</h3>
+                <p>Enjoy your morning coffee with city views.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT/CALL TO ACTION SECTION -->
+    <section id="contact" class="cta-section">
+        <h2>Ready to Tour?</h2>
+        <p>Located in the heart of [City], this gem won't last long. Contact us today!</p>
+        <form action="#" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" placeholder="Tell us about your viewing availability..."></textarea>
+            <button type="submit">Send Inquiry</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Apartment Rentals. All rights reserved.</p>
+        <div class="social-links">
+            <!-- Link your social media here -->
+        </div>
+    </footer>
+
+    <!-- Link to the JavaScript file (MUST be at the end of body) -->
+    <script src="script.js"></script>
+</body>
+</html>
