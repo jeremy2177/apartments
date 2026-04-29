@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2 - 1 Bed/1 Bath | Rental Property</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="logo">Your Rental</div>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="unit1.html">Unit 1</a></li>
+                <li><a href="unit2.html" class="active">Unit 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="unit-hero">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=80" alt="Unit 2 - Apartment">
+        <div class="unit-hero-overlay">
+            <h1>Unit 2</h1>
+            <p>1 Bedroom &bull; 1 Bathroom &bull; 650 sqft</p>
+        </div>
+    </section>
+
+    <!-- UNIT INFO BAR -->
+    <section class="unit-info-bar">
+        <div class="info-item">
+            <span class="info-label">Monthly Rent</span>
+            <span class="info-value">20,000 KES</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Deposit</span>
+            <span class="info-value">20,000 KES</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Available</span>
+            <span class="info-value">May 1, 2024</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">sqft</span>
+            <span class="info-value">650</span>
+        </div>
+    </section>
+
+    <!-- UNIT DETAILS -->
+    <section class="unit-details-section section-padding">
+        <div class="details-container">
+            <h2>About This Unit</h2>
+            <p class="unit-description">Welcome to Unit 2, a spacious 2-bedroom apartment featuring a bright living room, a fully equipped kitchen, and two comfortable bedrooms. This unit offers a clean and comfortable living space, perfect for individuals or small families looking for a quality home at an affordable price.</p>
+            
+            <div class="details-grid">
+                <div class="detail-item">
+                    <i class="fas fa-couch"></i>
+                    <div>
+                        <h4>Living Room</h4>
+                        <p>Spacious & Bright</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-bed"></i>
+                    <div>
+                        <h4>Bedrooms</h4>
+                        <p>2 Comfortable Rooms</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-utensils"></i>
+                    <div>
+                        <h4>Kitchen</h4>
+                        <p>Fully Equipped</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-bath"></i>
+                    <div>
+                        <h4>Bathroom</h4>
+                        <p>With Shower</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section section-padding dark-background">
+        <h2>Features & Amenities</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Air Conditioning</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Hardwood Floors</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>In-Unit Washer/Dryer</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Walk-in Closet</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>City Views</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>High-Speed Internet</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Cable Ready</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-check"></i>
+                <span>Small Pets Considered</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGE GALLERY -->
+    <section class="gallery-section section-padding">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-grid">
+            <img class="gallery-item" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="Living Area" loading="lazy">
+            <img class="gallery-item" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80" alt="Kitchen" loading="lazy">
+            <img class="gallery-item" src="https://images.unsplash.com/photo-1536376072261-38c75010e6cf?w=800&q=80" alt="Bedroom" loading="lazy">
+            <img class="gallery-item" src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Bathroom" loading="lazy">
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+    </div>
+
+    <!-- MAP SECTION -->
+    <section class="map-section section-padding">
+        <h2>Location</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1683.3860657691948!2d35.29360357125629!3d0.47621537043741363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1777450932505!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section section-padding">
+        <h2>Contact Us</h2>
+        <p class="section-subtitle">Schedule a viewing today</p>    
+        
+        <div class="contact-options">
+            <a href="tel:+1234567890" class="contact-btn contact-phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>Call Us</span>
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" class="contact-btn contact-whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Your Rental Property. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
