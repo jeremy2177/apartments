@@ -114,7 +114,7 @@ if ('IntersectionObserver' in window) {
             }
         });
     });
-    i
+    
     lazyImages.forEach(img => {
         img.style.opacity = '0';
         img.style.transition = 'opacity 0.3s ease';
